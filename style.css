@@ -1,0 +1,181 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+:root {
+    --Font-body:"Cairo Play", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+    --Purple-700: hsl(257, 40%, 49%);
+    --Magenta-400: hsl(300, 69%, 71%);
+}
+body {
+    height: 100vh;
+    font-family: var(--Font-body);
+    background-color: var(--Purple-700);
+    display: flex;
+    align-items: center;
+    background-image: url(images/bg-desktop.svg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.parent {
+    display: flex;
+    flex-direction: row;
+    width: 1030px;
+    justify-content: space-evenly;
+        margin-left: 54px;
+    margin-bottom: 41px;
+  
+}
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+}
+.right-section {
+    align-self: center;
+}
+.logo {
+        margin-top: 34px;
+}
+.logo img {
+    width: 158px;
+}
+.foto img {
+       width: 540px;
+}
+.logos-aplications {
+position: absolute;
+    bottom: 22px;
+    right: 49px;
+    display: flex;
+}
+.logos-aplications div {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s  ease;
+
+}
+.logos-aplications div:hover {
+        opacity: 0.6;
+        transform: scale(0.8);
+        cursor: pointer;
+}
+.logos-aplications i {
+   font-size: 12px;
+    color: white;
+ 
+}
+h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    width: 349px;
+    line-height: 45px;
+    font-family: var(--font-heading);
+}
+p {
+    color: white;
+    font-size: 12px;
+    width: 375px;
+    line-height: 19px;
+    margin-top: 17px;
+    font-family: var(--font-heading);
+    font-weight: 300;
+}
+button {
+    width: 124px;
+    height: 36px;
+    margin-top: 13px;
+    border-radius: 29px;
+    border: none;
+    box-shadow: 0px 6px 25px -5px #414149;
+    color: var(--Purple-700);
+    transition: 0.5s  ease;
+    -webkit-transition: 0.5s  ease;
+    -moz-transition: 0.5s  ease;
+    -ms-transition: 0.5s  ease;
+    -o-transition: 0.5s  ease;
+}
+button:hover {
+    background-color: var(--Magenta-400);
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:405px) {
+    body {
+        height: 106vh;
+    }
+    .parent {
+    flex-direction: column;
+    width: 400px;
+    margin-left: 0;
+    margin-bottom: 0;
+    height: 917px;
+}
+.left-section {
+    gap: 47px;
+    margin-top: 89px;
+    align-items: center;
+}
+.logo {
+    margin-top: 0;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+.logo img {
+    width: 133px;
+}
+.foto img {
+    width: 284px;
+}
+.right-section {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -58px;
+}
+h2 {
+    font-size: 20px;
+    width: 263px;
+    line-height: 33px;
+    text-align: center;
+}
+p {
+    width: 247px;
+    text-align: center;
+}
+button {
+    width: 187px;
+    height: 33px;
+    margin-top: 16px;
+}
+
+.logos-aplications {
+    bottom: -151px;
+    right: 38%;
+}
+
+.logos-aplications div {
+    width: 20px;
+    height: 20px;
+}
+.logos-aplications i {
+    font-size: 9px;
+}
+
+}
