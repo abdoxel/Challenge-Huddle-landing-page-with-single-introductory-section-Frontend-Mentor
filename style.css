@@ -117,6 +117,8 @@ button:hover {
 @media screen and (max-width:405px) {
     body {
         height: 106vh;
+        background-image: url(images/bg-mobile.svg);
+        background-position: top;
     }
     .parent {
     flex-direction: column;
